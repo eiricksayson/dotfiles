@@ -1,0 +1,30 @@
+" Basic vim config — fallback when nvim is not available
+syntax on
+set number
+set relativenumber
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set nowrap
+set scrolloff=8
+set signcolumn=yes
+set cursorline
+set backspace=indent,eol,start
+set clipboard=unnamed
+set noswapfile
+set nobackup
+
+" Better splits
+set splitbelow
+set splitright
+
+" Navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l

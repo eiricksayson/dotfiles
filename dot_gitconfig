@@ -1,0 +1,22 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/sbin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/sbin/gh auth git-credential
+[core]
+	autocrlf = input
+[user]
+	name = Eirick Sayson
+	email = eiricksayson@users.noreply.github.com
+
+# Per-account identity/SSH-key overrides for ~/Developer/* repo folders.
+# Each included file sets user.name/email and core.sshCommand for its
+# dedicated SSH key. Must stay after [user] above so folder-specific
+# values win (git applies scalar config in file order; last match wins).
+[includeIf "gitdir:/home/eirick/Developer/eiricksayson/"]
+	path = /home/eirick/Developer/eiricksayson/.gitconfig
+[includeIf "gitdir:/home/eirick/Developer/eisayson-clgx/"]
+	path = /home/eirick/Developer/eisayson-clgx/.gitconfig
+[includeIf "gitdir:/home/eirick/Developer/esayson-gitlab/"]
+	path = /home/eirick/Developer/esayson-gitlab/.gitconfig
