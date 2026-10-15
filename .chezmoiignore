@@ -1,3 +1,9 @@
+# Repo documentation — kept in source for reference, not deployed to $HOME
+Brewfile
+CHEATSHEET.md
+INSTALL.md
+README.md
+
 # Mirrors ~/dotfiles/.gitignore exclusions, ported for chezmoi
 
 # tmux plugins installed at runtime via TPM — don't vendor third-party code
