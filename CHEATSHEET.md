@@ -373,3 +373,27 @@
 | brew info pkg | show package info |
 | brew uninstall pkg | remove package |
 | brew cleanup | remove old versions |
+
+## Chezmoi (dotfiles manager)
+
+Source lives at `~/.local/share/chezmoi` (plain git repo, no symlinks — files
+are copied, not linked). Edit the source, then apply to deploy.
+
+| command | description |
+|---|---|
+| chezmoi edit <file> | open source copy in editor, auto-apply on save (preferred way to edit) |
+| chezmoi apply | deploy source -> $HOME |
+| chezmoi diff | preview pending changes before applying |
+| chezmoi status | show drift between $HOME and source |
+| chezmoi re-add | pull ALL current $HOME changes back into source (if you edited live files directly) |
+| chezmoi re-add <file> | pull one specific $HOME file's changes back into source |
+| chezmoi update | git pull latest from GitHub + apply in one step |
+| chezmoi cd | jump into the source repo (for git add/commit/push) |
+| chezmoi init --apply <user> | bootstrap on a new machine (clones github.com/<user>/dotfiles + applies) |
+
+Update flow (local edit -> GitHub):
+chezmoi edit <file>  (or edit live + chezmoi re-add)
+chezmoi cd && git add -A && git commit -m "..." && git push
+
+Update flow (GitHub -> local machine):
+chezmoi update
