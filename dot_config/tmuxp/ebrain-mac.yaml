@@ -1,0 +1,18 @@
+session_name: ebrain-mac
+windows:
+- focus: 'true'
+  layout: 56b2,181x40,0,0,13
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: python3.11
+  start_directory: /Users/eiricksayson/Developer/ebrain
+  window_name: fish
+- layout: 56b7,181x40,0,0,18
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /Users/eiricksayson/Developer/ebrain
+  window_name: nvim

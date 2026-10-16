@@ -1,9 +1,26 @@
 session_name: resume
-start_directory: ~/Developer/resume
 windows:
-  - window_name: shell
-    panes:
-      - shell
-  - window_name: nvim
-    panes:
-      - nvim
+- layout: 56b4,181x40,0,0,15
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: python3.11
+  start_directory: /Users/eiricksayson/Developer/resume
+  window_name: shell
+- focus: 'true'
+  layout: 56b5,181x40,0,0,16
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /Users/eiricksayson/Developer/resume
+  window_name: nvim
+- layout: 56b6,181x40,0,0,17
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: fish
+  start_directory: /Users/eiricksayson/Developer/resume
+  window_name: fish

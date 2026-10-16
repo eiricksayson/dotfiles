@@ -1,0 +1,24 @@
+session_name: dotfiles-mac
+windows:
+- focus: 'true'
+  layout: acff,181x40,0,0,2
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: python3.11
+  start_directory: /Users/eiricksayson/.local/share/chezmoi
+  window_name: python3.11
+- layout: ad01,181x40,0,0,4
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: lazygit
+  start_directory: /Users/eiricksayson/.local/share/chezmoi
+  window_name: lazygit
+- layout: 56b8,181x40,0,0,19
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /Users/eiricksayson/.config/tmuxp
+  window_name: nvim

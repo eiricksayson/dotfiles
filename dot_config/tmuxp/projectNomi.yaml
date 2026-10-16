@@ -1,0 +1,17 @@
+session_name: projectNomi
+windows:
+- focus: 'true'
+  layout: d6b3,181x40,0,0,24
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: python3.11
+  start_directory: /Users/eiricksayson/Developer/projectNomi
+  window_name: python3.11
+- layout: d6b4,181x40,0,0,25
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: fish
+  start_directory: /Users/eiricksayson/Developer/projectNomi
+  window_name: fish

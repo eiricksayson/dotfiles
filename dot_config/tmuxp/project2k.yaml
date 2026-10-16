@@ -1,0 +1,17 @@
+session_name: project2k
+windows:
+- focus: 'true'
+  layout: d6b1,181x40,0,0,22
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: python3.11
+  start_directory: /Users/eiricksayson/Developer/project2k
+  window_name: python3.11
+- layout: d6b2,181x40,0,0,23
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /Users/eiricksayson/Developer/project2k
+  window_name: nvim
