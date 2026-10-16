@@ -1,0 +1,19 @@
+session_name: dotfiles
+windows:
+- focus: 'true'
+  layout: dc8f,179x42,0,0,20
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: copilot
+  start_directory: /home/eirick/dotfiles
+  window_name: copilot
+- layout: dc90,179x42,0,0,21
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: fish
+  start_directory: /home/eirick/dotfiles
+  window_name: fish
