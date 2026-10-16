@@ -14,9 +14,9 @@
 # Each included file sets user.name/email and core.sshCommand for its
 # dedicated SSH key. Must stay after [user] above so folder-specific
 # values win (git applies scalar config in file order; last match wins).
-[includeIf "gitdir:/home/eirick/Developer/eiricksayson/"]
-	path = /home/eirick/Developer/eiricksayson/.gitconfig
-[includeIf "gitdir:/home/eirick/Developer/eisayson-clgx/"]
-	path = /home/eirick/Developer/eisayson-clgx/.gitconfig
-[includeIf "gitdir:/home/eirick/Developer/esayson-gitlab/"]
-	path = /home/eirick/Developer/esayson-gitlab/.gitconfig
+[includeIf "gitdir:~/Developer/eiricksayson/"]
+	path = ~/Developer/eiricksayson/.gitconfig
+[includeIf "gitdir:~/Developer/eisayson-clgx/"]
+	path = ~/Developer/eisayson-clgx/.gitconfig
+[includeIf "gitdir:~/Developer/esayson-gitlab/"]
+	path = ~/Developer/esayson-gitlab/.gitconfig
