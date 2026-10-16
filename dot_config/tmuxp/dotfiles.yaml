@@ -1,0 +1,11 @@
+session_name: dotfiles
+windows:
+- layout: 5a85,200x52,0,0,54
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: yinsen -c dotfiles1
+  start_directory: /Users/eiricksayson/dotfiles
+  window_name: dotfiles
+  window_name: fish

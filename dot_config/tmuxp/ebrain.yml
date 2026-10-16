@@ -1,0 +1,11 @@
+session_name: ebrain
+windows:
+- layout: 5a85,200x52,0,0,54
+  options:
+    automatic-rename: false
+  panes:
+  - focus: 'true'
+    shell_command: yinsen -c ebrain
+  start_directory: /Users/eiricksayson/ebrain
+  window_name: ebrain
+  window_name: fish

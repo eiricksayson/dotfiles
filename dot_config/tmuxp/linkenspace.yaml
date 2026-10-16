@@ -1,0 +1,20 @@
+session_name: linkenspace
+start_directory: ~/Developer/linkenspace/linkenspace
+windows:
+  - window_name: shell
+    panes:
+      - shell
+  - window_name: nvim
+    panes:
+      - nvim
+  - window_name: terraform
+    start_directory: ~/Developer/linkenspace/linkenspace/terraform
+    panes:
+      - shell
+      - shell
+  - window_name: lazysql
+    panes:
+      - lazysql
+  - window_name: shell2
+    panes:
+      - shell

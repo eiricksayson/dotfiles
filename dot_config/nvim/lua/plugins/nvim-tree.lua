@@ -13,6 +13,31 @@ return {
         enable = true,
         update_root = false,
       },
+      on_attach = function(bufnr)
+        local api = require("nvim-tree.api")
+        -- keep all of nvim-tree's default keymaps (<CR>, o, etc.)
+        api.config.mappings.default_on_attach(bufnr)
+
+        -- live-preview the file under the cursor without leaving the tree;
+        -- debounced via a generation token (avoids libuv timer :close() races)
+        local preview_gen = 0
+        vim.api.nvim_create_autocmd("CursorMoved", {
+          buffer = bufnr,
+          callback = function()
+            preview_gen = preview_gen + 1
+            local this_gen = preview_gen
+            vim.defer_fn(function()
+              if this_gen ~= preview_gen then
+                return -- a newer cursor move superseded this one
+              end
+              local ok, node = pcall(api.tree.get_node_under_cursor)
+              if ok and node and node.type == "file" then
+                pcall(api.node.open.preview)
+              end
+            end, 100)
+          end,
+        })
+      end,
       filters = {
         -- show dotfiles/hidden files by default
         dotfiles = false,

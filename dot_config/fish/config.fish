@@ -20,6 +20,7 @@ if type -q eza
 end
 
 alias tf "terraform"
+alias cm "chezmoi"
 
 switch (uname)
   case Darwin
