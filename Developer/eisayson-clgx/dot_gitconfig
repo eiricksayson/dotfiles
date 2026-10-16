@@ -1,0 +1,9 @@
+# Git identity for ~/Developer/eisayson-clgx/ (work GitHub account)
+# Applied automatically via includeIf "gitdir:" in ~/.gitconfig
+# Reuses the existing ~/.ssh/id_ed25519 key, which is already registered
+# and confirmed working for the eisayson-clgx GitHub account.
+[user]
+	name = Eirick Sayson
+	email = eisayson@cotality.com
+[core]
+	sshCommand = ssh -F /dev/null -i ~/.ssh/id_ed25519 -o IdentitiesOnly=yes

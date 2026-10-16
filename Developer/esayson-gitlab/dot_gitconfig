@@ -1,0 +1,7 @@
+# Git identity for ~/Developer/esayson-gitlab/ (work GitLab account)
+# Applied automatically via includeIf "gitdir:" in ~/.gitconfig
+[user]
+	name = Eirick Sayson
+	email = eisayson@cotality.com
+[core]
+	sshCommand = ssh -F /dev/null -i ~/.ssh/id_ed25519_esayson_gitlab -o IdentitiesOnly=yes

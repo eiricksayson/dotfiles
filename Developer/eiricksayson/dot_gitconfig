@@ -1,0 +1,7 @@
+# Git identity for ~/Developer/eiricksayson/ (personal GitHub account)
+# Applied automatically via includeIf "gitdir:" in ~/.gitconfig
+[user]
+	name = Eirick Sayson
+	email = eiricksayson@users.noreply.github.com
+[core]
+	sshCommand = ssh -F /dev/null -i ~/.ssh/id_ed25519_eiricksayson -o IdentitiesOnly=yes
