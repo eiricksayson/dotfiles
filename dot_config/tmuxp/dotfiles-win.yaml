@@ -1,15 +1,13 @@
 session_name: dotfiles-win
 windows:
-- layout: cebe,179x38,0,0,1
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: co --resume dotfiles1
   start_directory: /home/eirick/Developer/eiricksayson/dotfiles
   window_name: copilot
-- layout: cebf,179x38,0,0,2
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
@@ -17,7 +15,6 @@ windows:
   start_directory: /home/eirick/Developer/eiricksayson/dotfiles
   window_name: fish
 - focus: 'true'
-  layout: cec0,179x38,0,0,3
   options: {}
   panes:
   - pane

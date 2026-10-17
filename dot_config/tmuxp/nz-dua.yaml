@@ -1,7 +1,6 @@
 session_name: nz-dua
 windows:
 - focus: 'true'
-  layout: b8be,179x42,0,0,1
   options:
     automatic-rename: false
   panes:
@@ -9,32 +8,28 @@ windows:
     shell_command: co --resume nz-dua1
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web
   window_name: copilot
-- layout: b8bf,179x42,0,0,2
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web
   window_name: nvim
-- layout: b8c0,179x42,0,0,3
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: fish
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web/dua-nz-web
   window_name: fish
-- layout: b8c1,179x42,0,0,4
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: fish
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web/dua-nz-client
   window_name: node
-- layout: 5c95,179x42,0,0,16
-  options: {}
+- options: {}
   panes:
   - focus: 'true'
     shell_command: co --resume nz-dua2

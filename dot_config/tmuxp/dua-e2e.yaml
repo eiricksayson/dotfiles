@@ -1,7 +1,6 @@
 session_name: dua-e2e
 windows:
 - focus: 'true'
-  layout: b8c4,179x42,0,0,7
   options:
     automatic-rename: false
   panes:
@@ -9,16 +8,14 @@ windows:
     shell_command: co --resume dua-e2e1
   start_directory: /home/eirick/gitlab/DataApp/dua-e2e-test
   window_name: copilot
-- layout: b8c5,179x42,0,0,8
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
   start_directory: /home/eirick/gitlab/DataApp/dua-e2e-test
   window_name: nvim
-- layout: b8c6,179x42,0,0,9
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'

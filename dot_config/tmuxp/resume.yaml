@@ -1,7 +1,6 @@
 session_name: resume
 windows:
-- layout: 56b4,181x40,0,0,15
-  options:
+- options:
     automatic-rename: false
   panes:
   - focus: 'true'
@@ -9,7 +8,6 @@ windows:
   start_directory: /Users/eiricksayson/Developer/resume
   window_name: shell
 - focus: 'true'
-  layout: 56b5,181x40,0,0,16
   options:
     automatic-rename: false
   panes:
@@ -17,8 +15,7 @@ windows:
     shell_command: nvim
   start_directory: /Users/eiricksayson/Developer/resume
   window_name: nvim
-- layout: 56b6,181x40,0,0,17
-  options: {}
+- options: {}
   panes:
   - focus: 'true'
     shell_command: fish
