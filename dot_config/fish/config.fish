@@ -21,6 +21,8 @@ end
 
 alias tf "terraform"
 alias cm "chezmoi"
+alias tp "tmuxp"
+alias ys "hermes -p yinsen"
 
 switch (uname)
   case Darwin
