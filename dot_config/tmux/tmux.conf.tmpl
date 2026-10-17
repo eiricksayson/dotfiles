@@ -33,7 +33,7 @@ set-window-option -g mode-keys vi
 
 #bind t send-key C-t
 # Show personal cheatsheet (Ctrl+t / to open, q or Ctrl+t / to close)
-bind / run-shell 'if [ "#{session_name}" = "cheatsheet" ]; then tmux detach-client; else tmux display-popup -w90% -h90% -E "nvim -R -c \"nnoremap q :q!<CR>\" ~/.local/share/chezmoi/CHEATSHEET.md"; fi'
+bind / run-shell 'if [ "#{session_name}" = "cheatsheet" ]; then tmux detach-client; else tmux display-popup -w90% -h90% -E "nvim -R -c \"nnoremap q :q!<CR>\" {{ .chezmoi.sourceDir }}/CHEATSHEET.md"; fi'
 # Reload settings
 bind r source-file ~/.config/tmux/tmux.conf \; display "Reloaded!"
 # Open current directory

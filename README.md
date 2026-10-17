@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
+Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
 ## What's inside
 
@@ -35,22 +35,26 @@ Quick version:
 
 ## Setup on a new machine
 
-1. Clone the repo
+1. Install chezmoi
 
-       git clone git@github.com:eiricksayson/dotfiles.git ~/dotfiles
+       brew install chezmoi
+       # or: sh -c "$(curl -fsLS get.chezmoi.io)"
 
-2. Install GNU Stow
+2. Choose the source directory
 
-       brew install stow
+   This repo is checked out to a custom location (`~/Developer/<github-username>/dotfiles`),
+   NOT chezmoi's default `~/.local/share/chezmoi`. Configure that before init:
 
-3. Apply all symlinks
+       mkdir -p ~/.config/chezmoi
+       echo 'sourceDir = "/home/<user>/Developer/eiricksayson/dotfiles"' > ~/.config/chezmoi/chezmoi.toml
 
-       cd ~/dotfiles
-       stow --target=$HOME --no-folding .
+3. Initialize and apply
+
+       chezmoi init --ssh --apply eiricksayson
 
 4. Install global CLI utilities (Homebrew)
 
-       brew bundle --file=Brewfile
+       brew bundle --file="$(chezmoi source-path)/Brewfile"
 
 5. Install asdf tools (language runtimes & DevOps tools)
 
@@ -68,10 +72,15 @@ Quick version:
 
 | Task | Command |
 |---|---|
-| Re-apply symlinks | `cd ~/dotfiles && stow --target=$HOME --no-folding --restow .` |
-| Add a ~/.config tool | copy into `~/dotfiles/.config/<tool>/` then restow |
-| Add a home dotfile | copy into `~/dotfiles/` then restow |
-| Push changes | `git add -A && git commit -m "..." && git push origin main` |
+| Edit a file (preferred) | `chezmoi edit <file>` — opens source copy, auto-applies on save |
+| Re-apply after a manual $HOME edit | `chezmoi re-add <file>` then `chezmoi apply` |
+| Preview pending changes | `chezmoi diff` |
+| Check for drift | `chezmoi status` |
+| Add a new file | `chezmoi add <path>` |
+| Push changes | `chezmoi cd && git add -A && git commit -m "..." && git push` |
+| Pull latest + apply | `chezmoi update` |
+
+See [CHEATSHEET.md](./CHEATSHEET.md) for the full chezmoi command reference.
 
 ## Notes
 

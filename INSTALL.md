@@ -45,7 +45,7 @@ asdf install
 
 ## Neovim (LazyVim + plugins)
 
-Neovim config lives in `.config/nvim` (a [LazyVim](https://www.lazyvim.org/) setup). After stowing dotfiles, plugins install/sync automatically on first launch via `lazy.nvim`, or manually:
+Neovim config lives in `.config/nvim` (a [LazyVim](https://www.lazyvim.org/) setup). After `chezmoi apply`, plugins install/sync automatically on first launch via `lazy.nvim`, or manually:
 
 ```bash
 nvim --headless "+Lazy! sync" +qa

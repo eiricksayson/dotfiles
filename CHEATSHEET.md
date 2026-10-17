@@ -376,8 +376,10 @@
 
 ## Chezmoi (dotfiles manager)
 
-Source lives at `~/.local/share/chezmoi` (plain git repo, no symlinks — files
-are copied, not linked). Edit the source, then apply to deploy.
+Source lives at `~/Developer/<github-username>/dotfiles` (NOT chezmoi's
+default `~/.local/share/chezmoi` — this machine's custom location is set via
+`sourceDir` in `~/.config/chezmoi/chezmoi.toml`). Plain git repo, no symlinks
+— files are copied, not linked. Edit the source, then apply to deploy.
 
 | command | description |
 |---|---|
@@ -389,7 +391,12 @@ are copied, not linked). Edit the source, then apply to deploy.
 | chezmoi re-add <file> | pull one specific $HOME file's changes back into source |
 | chezmoi update | git pull latest from GitHub + apply in one step |
 | chezmoi cd | jump into the source repo (for git add/commit/push) |
-| chezmoi init --apply <user> | bootstrap on a new machine (clones github.com/<user>/dotfiles + applies) |
+| chezmoi source-path | print the actual configured source directory on this machine |
+
+Bootstrap on a new machine (custom source location):
+mkdir -p ~/.config/chezmoi
+echo 'sourceDir = "/home/<user>/Developer/<github-username>/dotfiles"' > ~/.config/chezmoi/chezmoi.toml
+chezmoi init --apply <github-username>
 
 Update flow (local edit -> GitHub):
 chezmoi edit <file>  (or edit live + chezmoi re-add)

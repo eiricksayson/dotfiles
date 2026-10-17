@@ -6,14 +6,14 @@ windows:
   panes:
   - focus: 'true'
     shell_command: yinsen --resume dotfiles1
-  start_directory: /Users/eiricksayson/.local/share/chezmoi
+  start_directory: {{ .chezmoi.sourceDir }}
   window_name: python3.11
 - layout: ad01,181x40,0,0,4
   options: {}
   panes:
   - focus: 'true'
     shell_command: lazygit
-  start_directory: /Users/eiricksayson/.local/share/chezmoi
+  start_directory: {{ .chezmoi.sourceDir }}
   window_name: lazygit
 - layout: 56b8,181x40,0,0,19
   options: {}
