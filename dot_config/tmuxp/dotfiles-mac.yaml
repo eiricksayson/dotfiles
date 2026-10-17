@@ -5,7 +5,7 @@ windows:
   options: {}
   panes:
   - focus: 'true'
-    shell_command: python3.11
+    shell_command: yinsen --resume dotfiles1
   start_directory: /Users/eiricksayson/.local/share/chezmoi
   window_name: python3.11
 - layout: ad01,181x40,0,0,4

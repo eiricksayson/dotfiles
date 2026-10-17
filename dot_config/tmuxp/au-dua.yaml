@@ -6,7 +6,7 @@ windows:
     automatic-rename: false
   panes:
   - focus: 'true'
-    shell_command: copilot
+    shell_command: co --resume au-dua1
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web
   window_name: copilot
 - layout: 5c91,179x42,0,0,12

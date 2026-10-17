@@ -6,7 +6,7 @@ windows:
     automatic-rename: false
   panes:
   - focus: 'true'
-    shell_command: copilot
+    shell_command: co --resume nz-dua1
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web
   window_name: copilot
 - layout: b8bf,179x42,0,0,2
@@ -22,7 +22,7 @@ windows:
     automatic-rename: false
   panes:
   - focus: 'true'
-    shell_command: java
+    shell_command: fish
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web/dua-nz-web
   window_name: fish
 - layout: b8c1,179x42,0,0,4
@@ -37,6 +37,6 @@ windows:
   options: {}
   panes:
   - focus: 'true'
-    shell_command: copilot
+    shell_command: co --resume nz-dua2
   start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_nz-dua_nz_web
   window_name: copilot

@@ -5,7 +5,7 @@ windows:
   options: {}
   panes:
   - focus: 'true'
-    shell_command: python3.11
+    shell_command: yinsen --resume project2k
   start_directory: /Users/eiricksayson/Developer/project2k
   window_name: python3.11
 - layout: d6b2,181x40,0,0,23

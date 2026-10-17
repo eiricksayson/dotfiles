@@ -6,7 +6,7 @@ windows:
     automatic-rename: false
   panes:
   - focus: 'true'
-    shell_command: python3.11
+    shell_command: yinsen --resume ebrain1
   start_directory: /Users/eiricksayson/Developer/ebrain
   window_name: fish
 - layout: 56b7,181x40,0,0,18

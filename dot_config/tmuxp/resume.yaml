@@ -5,7 +5,7 @@ windows:
     automatic-rename: false
   panes:
   - focus: 'true'
-    shell_command: python3.11
+    shell_command: yinsen --resume resume1
   start_directory: /Users/eiricksayson/Developer/resume
   window_name: shell
 - focus: 'true'
