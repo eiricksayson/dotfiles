@@ -6,6 +6,7 @@
 	helper = !/usr/sbin/gh auth git-credential
 [core]
 	autocrlf = input
+	excludesFile = ~/.gitignore_global
 [user]
 	name = Eirick Sayson
 	email = eiricksayson@users.noreply.github.com

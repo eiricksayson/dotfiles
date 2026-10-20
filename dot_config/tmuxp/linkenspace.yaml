@@ -6,14 +6,14 @@ windows:
   panes:
   - focus: 'true'
     shell_command: yinsen --resume linkenspace1
-  start_directory: /Users/eiricksayson/Developer/linkenspace/linkenspace
+  start_directory: ~/Developer/linkenspace/linkenspace
   window_name: shell
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /Users/eiricksayson/Developer/linkenspace/linkenspace
+  start_directory: ~/Developer/linkenspace/linkenspace
   window_name: nvim
 - options:
     automatic-rename: false
@@ -21,19 +21,19 @@ windows:
   - fish
   - focus: 'true'
     shell_command: fish
-  start_directory: /Users/eiricksayson/Developer/linkenspace/linkenspace/terraform
+  start_directory: ~/Developer/linkenspace/linkenspace/terraform
   window_name: terraform
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: lazysql
-  start_directory: /Users/eiricksayson/Developer/linkenspace/linkenspace
+  start_directory: ~/Developer/linkenspace/linkenspace
   window_name: lazysql
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /Users/eiricksayson/Developer/linkenspace/linkenspace
+  start_directory: ~/Developer/linkenspace/linkenspace
   window_name: shell2

@@ -5,7 +5,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: yinsen --resume resume1
-  start_directory: /Users/eiricksayson/Developer/resume
+  start_directory: ~/Developer/resume
   window_name: shell
 - focus: 'true'
   options:
@@ -13,11 +13,11 @@ windows:
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /Users/eiricksayson/Developer/resume
+  start_directory: ~/Developer/resume
   window_name: nvim
 - options: {}
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /Users/eiricksayson/Developer/resume
+  start_directory: ~/Developer/resume
   window_name: fish

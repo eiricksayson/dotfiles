@@ -6,11 +6,11 @@ windows:
   panes:
   - focus: 'true'
     shell_command: yinsen --resume ebrain1
-  start_directory: /Users/eiricksayson/Developer/ebrain
+  start_directory: ~/Developer/ebrain
   window_name: fish
 - options: {}
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /Users/eiricksayson/Developer/ebrain
+  start_directory: ~/Developer/ebrain
   window_name: nvim

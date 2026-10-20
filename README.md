@@ -12,6 +12,8 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 | .config/fish | Fish shell | Shell config, tide prompt, functions, completions |
 | .config/ghostty | Ghostty | Terminal emulator config and solarized theme |
 | .config/tmux | tmux | Multiplexer — theme, statusline, macos, utility modules |
+| .config/tmuxp | tmuxp | Saved tmux session layouts |
+| .config/lazygit | lazygit | Git TUI config |
 
 ### ~/  (home directory)
 
@@ -20,7 +22,7 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 | .gitconfig | Global git identity, aliases, LFS, conditional includes per workspace |
 | .gitignore_global | Global gitignore — DS_Store, caches, history files |
 | .tool-versions | asdf version pins — language runtimes & DevOps tools that need per-project pinning (java, maven, nodejs, terraform, packer, python, rust, ruby) |
-| Brewfile | Homebrew bundle — `brew bundle --file=Brewfile` installs the global CLI utilities (git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, gcloud-cli) |
+| Brewfile | Homebrew bundle — `brew bundle --file=Brewfile` installs the global CLI utilities (git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, tmuxp, gcloud-cli) |
 | INSTALL.md | Per-tool breakdown of asdf and Homebrew installs |
 | .vimrc | Vim fallback config (when nvim is unavailable) |
 
@@ -31,7 +33,7 @@ See [INSTALL.md](./INSTALL.md) for the full list of apps and install steps.
 Quick version:
 
 - **`.tool-versions` (asdf)** — language runtimes and DevOps tools where different projects may need different exact versions (java, maven, nodejs, python, ruby, rust, terraform, packer). Same on every OS: `asdf install`.
-- **Global CLI utilities** — used the same way everywhere, with no per-project pinning need (git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, gcloud-cli). `brew bundle --file=Brewfile` installs them all.
+- **Global CLI utilities** — used the same way everywhere, with no per-project pinning need (git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, tmuxp, gcloud-cli). `brew bundle --file=Brewfile` installs them all.
 
 ## Setup on a new machine
 

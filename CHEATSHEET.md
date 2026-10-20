@@ -222,7 +222,7 @@
 | ]d / [d | next / prev diagnostic |
 | gd | go to definition |
 | gD | go to declaration |
-| gi | go to implementation |
+| gI | go to implementation |
 | gr | go to references/usages |
 | gy | go to type definition |
 | K | hover docs (signature, javadoc) |
@@ -255,10 +255,16 @@
 | lla / lsa | ll -a |
 | vi | nvim |
 | tf | terraform |
+| cm | chezmoi |
+| tp | tmuxp |
+| ys | hermes -p yinsen |
+| co | copilot --autopilot ... (autopilot + full tool/path/url access) |
+| lg | lazygit |
 | t | tmux |
 | ta | tmux a |
 | tls | tmux ls |
-| e / ebrain | ebrain.py script |
+| tc | tmux a -t copilot |
+| routerm | hermes routing-tui (peter profile) |
 
 ## NEOVIM
 
@@ -324,24 +330,6 @@
 | S | squash ALL commits above into this one |
 | r | reword commit message |
 | f | fixup (squash without keeping message) |
-
----
-
-## DOTFILES (GNU Stow)
-
-| Command | Action |
-| --- | --- |
-| cd ~/dotfiles | go to dotfiles repo |
-| stow --target=$HOME --no-folding --restow . | re-apply all symlinks |
-| ./install-packages.sh | (removed) — see `brew bundle --file=Brewfile` |
-| asdf install | install pinned language runtimes & DevOps tools |
-| git add -A && git commit -m "..." | save changes |
-| git push origin main | push to GitHub |
-
-> After any config change: stow --restow is idempotent, safe to run anytime.
-> asdf (.tool-versions) is for per-project version pinning; Brewfile is for
-> global CLI utilities via Homebrew — see INSTALL.md for the per-tool
-> breakdown.
 
 ---
 

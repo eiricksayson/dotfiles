@@ -6,6 +6,6 @@ windows:
   panes:
   - focus: 'true'
     shell_command: yinsen -c ebrain
-  start_directory: /Users/eiricksayson/ebrain
+  start_directory: ~/ebrain
   window_name: ebrain
   window_name: fish

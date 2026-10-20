@@ -14,7 +14,7 @@ asdf install                  # language runtimes & DevOps tools — all version
 
 ## Homebrew (global CLI utilities)
 
-Covers: **git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, gcloud-cli**
+Covers: **git, neovim, lazygit, eza, ripgrep, peco, ghq, uv, bun, zoxide, tmuxp, gcloud-cli**
 
 ```bash
 brew bundle --file=Brewfile
@@ -26,9 +26,9 @@ For any of these, add the plugin once (skip if already added — check with `asd
 
 | Tool | Pinned version | Add plugin | Install |
 |---|---|---|---|
-| java | openjdk-25.0.2 | `asdf plugin add java` | `asdf install java openjdk-25.0.2` |
+| java | openjdk-21.0.2 | `asdf plugin add java` | `asdf install java openjdk-21.0.2` |
 | maven | 3.9.16 | `asdf plugin add maven` | `asdf install maven 3.9.16` |
-| nodejs | 24.21.0 | `asdf plugin add nodejs` | `asdf install nodejs 24.21.0` |
+| nodejs | 22.18.0 | `asdf plugin add nodejs` | `asdf install nodejs 22.18.0` |
 | terraform | 1.16.2 | `asdf plugin add terraform` | `asdf install terraform 1.16.2` |
 | packer | 1.16.0 | `asdf plugin add packer` | `asdf install packer 1.16.0` |
 | python | 3.14.7 | `asdf plugin add python` | `asdf install python 3.14.7` |
@@ -55,6 +55,6 @@ Notable plugins beyond the LazyVim defaults:
 
 | Plugin | Purpose |
 |---|---|
-| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder (files, grep, buffers, help) — added on top of LazyVim's default `snacks.nvim` picker; keymaps: `<leader>ff` find files, `<leader>fg` live grep, `<leader>fb` buffers, `<leader>fh` help tags |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) | Fuzzy finder (files, grep, buffers, help) — added on top of LazyVim's default `snacks.nvim` picker; keymaps: `<leader>tf` find files, `<leader>tg` live grep, `<leader>tb` buffers, `<leader>th` help tags |
 
 `snacks.nvim`'s file explorer/picker is configured to show hidden/dotfiles by default (see `lua/plugins/snacks-hidden.lua`) — press `H` inside the explorer to toggle if you ever need to hide them again.

@@ -6,44 +6,44 @@ windows:
   panes:
   - focus: 'true'
     shell_command: co --resume au-dua1
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web
   window_name: copilot
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web
   window_name: fish
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-web
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-web
   window_name: fish
 - options:
     automatic-rename: false
   panes:
   - pane
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-client
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-client
   window_name: fish
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-client
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-dua_web/dua-client
   window_name: fish
 - options: {}
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-configs
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-configs
   window_name: fish
 - options: {}
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-cloud_configs
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/dpa_aus-dataupdate_au-cloud_configs
   window_name: fish

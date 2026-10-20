@@ -1,6 +1,6 @@
 
 function _peco_change_directory
-  if [ (count $argv) ]
+  if [ (count $argv) -gt 0 ]
     peco --layout=bottom-up --query "$argv "|perl -pe 's/([ ()])/\\\\$1/g'|read foo
   else
     peco --layout=bottom-up |perl -pe 's/([ ()])/\\\\$1/g'|read foo
@@ -17,6 +17,6 @@ function peco_change_directory
     echo $HOME/.config
     ghq list -p
     ls -ad */|perl -pe "s#^#$PWD/#"|grep -v \.git
-    ls -ad $HOME/Developments/*/* |grep -v \.git
+    ls -ad $HOME/Developer/*/* |grep -v \.git
   end | sed -e 's/\/$//' | awk '!a[$0]++' | _peco_change_directory $argv
 end

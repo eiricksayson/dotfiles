@@ -30,7 +30,10 @@ switch (uname)
   case Linux
     # Do nothing
   case '*'
-    source (dirname (status --current-filename))/config-windows.fish
+    set -l windows_config (dirname (status --current-filename))/config-windows.fish
+    if test -f $windows_config
+      source $windows_config
+    end
 end
 
 set -l local_config (dirname (status --current-filename))/config-local.fish
@@ -60,7 +63,7 @@ alias tls "tmux ls"
 alias tc "tmux a -t copilot"
 # Hermes Agent — ensure ~/.local/bin is on PATH
 
-alias routerm "/home/eirick/.hermes/profiles/peter/bin/routing-tui"
+alias routerm "$HOME/.hermes/profiles/peter/bin/routing-tui"
 
 
 

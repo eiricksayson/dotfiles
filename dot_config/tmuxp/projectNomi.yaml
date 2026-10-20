@@ -5,11 +5,11 @@ windows:
   panes:
   - focus: 'true'
     shell_command: python3.11
-  start_directory: /Users/eiricksayson/Developer/projectNomi
+  start_directory: ~/Developer/projectNomi
   window_name: python3.11
 - options: {}
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /Users/eiricksayson/Developer/projectNomi
+  start_directory: ~/Developer/projectNomi
   window_name: fish

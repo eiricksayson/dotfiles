@@ -4,17 +4,17 @@ windows:
   panes:
   - focus: 'true'
     shell_command: co --resume cotality_ai1
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
   window_name: copilot
 - options: {}
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
   window_name: nvim
 - focus: 'true'
   options: {}
   panes:
   - pane
-  start_directory: /home/eirick/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
+  start_directory: ~/Developer/eisayson-clgx/corelogic-private/idap_agents_glb-ag_foundation-awesome_cotality_ai
   window_name: python

@@ -5,18 +5,18 @@ windows:
   panes:
   - focus: 'true'
     shell_command: co --resume dotfiles1
-  start_directory: /home/eirick/Developer/eiricksayson/dotfiles
+  start_directory: ~/Developer/eiricksayson/dotfiles
   window_name: copilot
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/Developer/eiricksayson/dotfiles
+  start_directory: ~/Developer/eiricksayson/dotfiles
   window_name: fish
 - focus: 'true'
   options: {}
   panes:
   - pane
-  start_directory: /home/eirick/Developer/eiricksayson/dotfiles
+  start_directory: ~/Developer/eiricksayson/dotfiles
   window_name: fish

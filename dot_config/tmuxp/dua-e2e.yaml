@@ -6,19 +6,19 @@ windows:
   panes:
   - focus: 'true'
     shell_command: co --resume dua-e2e1
-  start_directory: /home/eirick/gitlab/DataApp/dua-e2e-test
+  start_directory: ~/gitlab/DataApp/dua-e2e-test
   window_name: copilot
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/gitlab/DataApp/dua-e2e-test
+  start_directory: ~/gitlab/DataApp/dua-e2e-test
   window_name: nvim
 - options:
     automatic-rename: false
   panes:
   - focus: 'true'
     shell_command: fish
-  start_directory: /home/eirick/gitlab/DataApp/dua-e2e-test
+  start_directory: ~/gitlab/DataApp/dua-e2e-test
   window_name: fish

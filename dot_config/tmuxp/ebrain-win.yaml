@@ -4,17 +4,17 @@ windows:
   panes:
   - focus: 'true'
     shell_command: co --resume ebrain1
-  start_directory: /home/eirick/github/ebrain
+  start_directory: ~/github/ebrain
   window_name: copilot
 - options: {}
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/eirick/github/ebrain
+  start_directory: ~/github/ebrain
   window_name: nvim
 - focus: 'true'
   options: {}
   panes:
   - pane
-  start_directory: /home/eirick
+  start_directory: ~
   window_name: fish
